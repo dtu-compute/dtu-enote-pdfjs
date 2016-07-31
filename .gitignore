@@ -5,4 +5,7 @@ tags
 .DS_Store
 Makefile
 node_modules/
+tmp/
+dtu-core/
+log/
 examples/node/svgdump/

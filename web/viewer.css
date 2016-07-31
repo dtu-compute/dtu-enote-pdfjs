@@ -1939,3 +1939,82 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
     display: none;
   }
 }
+
+
+#viewBookmark {
+  display:none !important;
+}
+
+#download {
+  display:none !important;
+}
+
+#print {
+  display:none !important;
+}
+
+#openFile {
+  display:none !important;
+}
+
+#previous, #next {
+  display:none !important;
+}
+
+#pageNumberLabel, #pageNumber, #numPages{
+  display:none !important;  
+}
+
+.toolbarViewerLeft > .splitToolbarButton {}
+
+#toolbarViewerMiddle {
+  display:none !important;  
+}
+
+#sidebarToggle {
+  display:none !important;  
+}
+
+#toggleHandTool.toolbarButton::before {
+  content: url(images/secondaryToolbarButton-handTool.png);
+}
+
+#documentProperties.toolbarButton::before {
+  content: url(images/secondaryToolbarButton-documentProperties.png);
+}
+
+@media screen and (min-resolution: 2dppx) {
+  #toggleHandTool.toolbarButton::before {
+    content: url(images/secondaryToolbarButton-handTool@2x.png);
+  }
+
+  #documentProperties.toolbarButton::before {
+    content: url(images/secondaryToolbarButton-documentProperties@2x.png);
+  }
+}
+
+#secondaryToolbarToggle {
+   display:none !important; 
+}
+
+#toggleHandTool.toolbarButton > span {
+  display: inline-block;
+  width: 150px;
+  height :25px;
+  overflow: hidden;
+}
+
+#documentProperties.toolbarButton > span {
+  display: inline-block;
+  width: 180px;
+  height :25px;
+  overflow: hidden;
+}
+
+#documentPropertiesSpacer.toolbarButtonSpacer {
+    width: 100px;
+}
+#toggleHandToolSpacer.toolbarButtonSpacer {
+    width: 150px;
+}
+
