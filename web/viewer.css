@@ -1945,14 +1945,6 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   display:none !important;
 }
 
-#download {
-  display:none !important;
-}
-
-#print {
-  display:none !important;
-}
-
 #openFile {
   display:none !important;
 }
