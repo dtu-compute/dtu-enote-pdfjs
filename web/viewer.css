@@ -1963,10 +1963,6 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   display:none !important;  
 }
 
-#sidebarToggle {
-  display:none !important;  
-}
-
 #toggleHandTool.toolbarButton::before {
   content: url(images/secondaryToolbarButton-handTool.png);
 }

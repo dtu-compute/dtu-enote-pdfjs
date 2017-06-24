@@ -172,7 +172,7 @@ var PDFViewerApplication = {
   pageRotation: 0,
   isInitialViewSet: false,
   animationStartedPromise: null,
-  preferenceSidebarViewOnLoad: SidebarView.NONE,
+  preferenceSidebarViewOnLoad: SidebarView.OUTLINE,
   preferencePdfBugEnabled: false,
   preferenceShowPreviousViewOnLoad: true,
   preferenceDefaultZoomValue: '',
