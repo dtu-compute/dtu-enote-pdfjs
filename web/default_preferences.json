@@ -1,7 +1,7 @@
 {
   "showPreviousViewOnLoad": true,
   "defaultZoomValue": "",
-  "sidebarViewOnLoad": 3,
+  "sidebarViewOnLoad": 0,
   "enableHandToolOnLoad": false,
   "enableWebGL": false,
   "pdfBugEnabled": false,
