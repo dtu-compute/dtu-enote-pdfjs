@@ -1219,7 +1219,7 @@ html[dir='rtl'] .outlineItem > .outlineItems {
   height: auto;
   margin-bottom: 1px;
   border-radius: 2px;
-  color: hsla(0,0%,100%,.8);
+  color: rgba(0,0,0,1.0);
   font-size: 13px;
   line-height: 15px;
   -moz-user-select: none;
