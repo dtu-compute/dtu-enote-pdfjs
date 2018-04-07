@@ -78,10 +78,10 @@ See https://github.com/adobe-type-tools/cmap-resources
       <div id="sidebarContainer">
         <div id="toolbarSidebar">
           <div class="splitToolbarButton toggled">
-            <button id="viewThumbnail" class="toolbarButton group toggled" title="Show Thumbnails" tabindex="2" data-l10n-id="thumbs">
+            <button id="viewThumbnail" class="toolbarButton group" title="Show Thumbnails" tabindex="2" data-l10n-id="thumbs">
                <span data-l10n-id="thumbs_label">Thumbnails</span>
             </button>
-            <button id="viewOutline" class="toolbarButton group" title="Show Document Outline" tabindex="3" data-l10n-id="outline">
+            <button id="viewOutline" class="toolbarButton group toggled" title="Show Document Outline" tabindex="3" data-l10n-id="outline">
                <span data-l10n-id="outline_label">Document Outline</span>
             </button>
             <button id="viewAttachments" class="toolbarButton group" title="Show Attachments" tabindex="4" data-l10n-id="attachments">
@@ -90,9 +90,9 @@ See https://github.com/adobe-type-tools/cmap-resources
           </div>
         </div>
         <div id="sidebarContent">
-          <div id="thumbnailView">
+          <div id="thumbnailView" class="hidden">
           </div>
-          <div id="outlineView" class="hidden">
+          <div id="outlineView">
           </div>
           <div id="attachmentsView" class="hidden">
           </div>

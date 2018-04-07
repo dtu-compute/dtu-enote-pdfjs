@@ -71,7 +71,7 @@ var PDFSidebar = (function PDFSidebarClosure() {
    */
   function PDFSidebar(options) {
     this.isOpen = false;
-    this.active = SidebarView.THUMBS;
+    this.active = SidebarView.OUTLINE;
     this.isInitialViewSet = false;
 
     /**
@@ -105,9 +105,9 @@ var PDFSidebar = (function PDFSidebarClosure() {
       this.isInitialViewSet = false;
 
       this.close();
-      this.switchView(SidebarView.THUMBS);
+      this.switchView(SidebarView.OUTLINE);
 
-      this.outlineButton.disabled = false;
+      this.thumbnailButton.disabled = false;
       this.attachmentsButton.disabled = false;
     },
 
@@ -140,6 +140,8 @@ var PDFSidebar = (function PDFSidebarClosure() {
       }
       this.isInitialViewSet = true;
 
+      console.log('setInitialView: ' + view + " " + this.active);
+
       if (this.isOpen && view === SidebarView.NONE) {
         this._dispatchEvent();
         // If the user has already manually opened the sidebar,
@@ -169,6 +171,7 @@ var PDFSidebar = (function PDFSidebarClosure() {
       }
       var isViewChanged = (view !== this.active);
       var shouldForceRendering = false;
+      console.log("SwitchView " + view + " from "+ this.active);
 
       switch (view) {
         case SidebarView.THUMBS:
@@ -217,6 +220,7 @@ var PDFSidebar = (function PDFSidebarClosure() {
       // Update the active view *after* it has been validated above,
       // in order to prevent setting it to an invalid state.
       this.active = view | 0;
+      console.log("SwitchView updated to " + this.active);
 
       if (forceOpen && !this.isOpen) {
         this.open();
@@ -266,6 +270,7 @@ var PDFSidebar = (function PDFSidebarClosure() {
       if (this.isOpen) {
         this.close();
       } else {
+      console.log("Sidebar toggle open "+ this.active);
         this.open();
       }
     },
